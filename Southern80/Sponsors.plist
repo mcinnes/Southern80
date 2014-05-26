@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<array>
+		<string>Moama Water Sports Club</string>
+		<string>Beechworth Bakery</string>
+	</array>
+	<key>Website</key>
+	<array>
+		<string>http://southern80.com.au</string>
+		<string>http://beechworthbakery.net</string>
+	</array>
+	<key>TextView</key>
+	<array>
+		<string>Home of the Southern 80. Venue for collection of paperwork, competitor briefing, pre race scrutineering.</string>
+		<string>&lt;style&gt;
+h1 {color:#B22222;}
+&lt;/style&gt;
+
+&lt;h1&gt; WELCOME HOME &lt;/h1&gt;
+
+&lt;p&gt; Welcome to Echuca and an experience like no other! Our bakery here offers both upstairs and downstairs as well as indoor and outdoor seating, overlooking the calm and serene surroundings of the Campaspe river.
+
+And in addition to the visual feast, let us also entice your senses with our yummo coffee and delectable cakes and pastries.  Come and kick back, relax and enjoy the warm personalised service from our friendly team. Immerse yourself in the atmosphere with friends or family, while listening to one our popular local bands, every Sunday around lunch time. Now, that’s how life was meant to be…
+
+&lt;/p&gt;
+
+&lt;h3&gt;KYLIE DIVOLA &lt;/h3&gt;
+&lt;p&gt; our bakery manager in Echuca &lt;p&gt;</string>
+	</array>
+	<key>Address</key>
+	<array>
+		<string>72 Annesley st Echuca, 3564</string>
+		<string>513 High Strret  Echuca VIC 3564</string>
+	</array>
+	<key>PhoneNumber</key>
+	<array>
+		<string>0418610101 - Steve Robson - President</string>
+		<string>0425 215 401</string>
+	</array>
+	<key>Image</key>
+	<array>
+		<string>s8.png</string>
+		<string>bakery-echuca.jpg</string>
+	</array>
+</dict>
+</plist>
