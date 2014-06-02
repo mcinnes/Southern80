@@ -14,6 +14,8 @@
 
 @implementation MPMSponsorsViewController {
     NSArray *imageArray;
+    NSArray *imageArray2;
+    NSArray *imageArray3;
     NSArray *nameArray;
     NSArray *phoneNumberArray;
     NSArray *addressArray;
@@ -40,7 +42,23 @@
 {
     [super viewDidLoad];
     // Change button color
+    UIBarButtonItem *sidebarButton = [UIBarButtonItem alloc];
+    self.navigationItem.leftBarButtonItem = sidebarButton;
+    sidebarButton.title = @"Menu";
+    sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
     
+    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    sidebarButton.target = self.revealViewController;
+    sidebarButton.action = @selector(revealToggle:);
+
+    // Change button color
+    locationInt = 0;
+    
+    _imagePager.pageControl.currentPageIndicatorTintColor = [UIColor lightGrayColor];
+    _imagePager.pageControl.pageIndicatorTintColor = [UIColor blackColor];
+    
+    UIPinchGestureRecognizer *pinchGesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinch:)];
+    [_imagePager addGestureRecognizer:pinchGesture];
     
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
@@ -49,7 +67,9 @@
     
     // Load the file content and read the data into arrays
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    imageArray = [dict objectForKey:@"Image"];
+    imageArray = [dict objectForKey:@"Image1"];
+    imageArray2 = [dict objectForKey:@"Image2"];
+    imageArray3 = [dict objectForKey:@"Image3"];
     nameArray = [dict objectForKey:@"Name"];
     phoneNumberArray = [dict objectForKey:@"PhoneNumber"];
     addressArray = [dict objectForKey:@"Address"];
@@ -59,7 +79,7 @@
     locationInt = 1;
     
 
-    [imageView setImage:[UIImage imageNamed:[imageArray objectAtIndex:locationInt]]];
+   // [imageView setImage:[UIImage imageNamed:[imageArray objectAtIndex:locationInt]]];
     [textView loadHTMLString:[textViewArray objectAtIndex:locationInt] baseURL:nil];
     [self setTitle:[nameArray objectAtIndex:locationInt]];
     [phoneNumberButton setTitle:[phoneNumberArray objectAtIndex:locationInt] forState:UIControlStateNormal];
@@ -68,6 +88,25 @@
 
 
 	// Do any additional setup after loading the view.
+}
+- (NSArray *) arrayWithImageUrlStrings
+{
+    NSLog(@"lel");
+    return [NSArray arrayWithObjects:
+           [imageArray objectAtIndex:locationInt],
+            nil];
+}
+
+- (UIViewContentMode) contentModeForImage:(NSUInteger)image
+{
+    return UIViewContentModeScaleAspectFill;
+}
+
+-(void)handlePinch:(UIPinchGestureRecognizer*)sender {
+    
+  
+   
+    
 }
 
 - (void)didReceiveMemoryWarning

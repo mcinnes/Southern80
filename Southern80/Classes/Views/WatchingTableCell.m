@@ -6,21 +6,20 @@
 //  Copyright (c) 2012 Appcoda. All rights reserved.
 //
 
-#import "SimpleTableCell.h"
+#import "WatchingTableCell.h"
 
-@implementation SimpleTableCell
+@implementation WatchingTableCell
 @synthesize nameLabel = _nameLabel;
-@synthesize prepTimeLabel = _prepTimeLabel;
 @synthesize thumbnailImageView = _thumbnailImageView;
-@synthesize finishtimelabel = _finishtimelabel;
+@synthesize descLabel = _descLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
-        [_nameLabel setFont:[UIFont fontWithName:@"Brandon Grotesque" size:30]];
-
+     //   [self.nameLabel setFont:[UIFont fontWithName:@"BrandonGrotesque-Regular" size:45]];
+         
     }
     return self;
 }

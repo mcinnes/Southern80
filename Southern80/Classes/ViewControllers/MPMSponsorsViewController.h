@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFImagePager.h"
+@interface MPMSponsorsViewController : UIViewController <AFImagePagerDelegate, AFImagePagerDataSource>
+{
+    IBOutlet AFImagePager *_imagePager;
+}
 
-@interface MPMSponsorsViewController : UIViewController
 
 @property (nonatomic, assign) int locationInt;
 

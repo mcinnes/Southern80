@@ -40,10 +40,18 @@ And in addition to the visual feast, let us also entice your senses with our yum
 		<string>0418610101 - Steve Robson - President</string>
 		<string>0425 215 401</string>
 	</array>
-	<key>Image</key>
+	<key>Image1</key>
 	<array>
 		<string>s8.png</string>
-		<string>bakery-echuca.jpg</string>
+		<string>stinga-1.png</string>
+	</array>
+	<key>Image2</key>
+	<array>
+		<string>01d.png</string>
+	</array>
+	<key>Image3</key>
+	<array>
+		<string>twitter.png</string>
 	</array>
 </dict>
 </plist>

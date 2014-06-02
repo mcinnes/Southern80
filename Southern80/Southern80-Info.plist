@@ -24,6 +24,13 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Brandon_bld.otf</string>
+		<string>PillGothic300mg-Semibd.ttf</string>
+		<string>PillGothic300mg-Light.ttf</string>
+		<string>BrandonGrotesque-Regular.otf</string>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
