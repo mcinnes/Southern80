@@ -152,7 +152,7 @@
             [imageView setBackgroundColor:[UIColor clearColor]];
             [imageView setContentMode:[_dataSource contentModeForImage:i]];
             [imageView setTag:i];
-            [imageView setImage:[aImageUrls objectAtIndex:i]];
+         //   [imageView setImage:[aImageUrls objectAtIndex:i]];
             
             // Add GestureRecognizer to ImageView
             UITapGestureRecognizer *singleTapGestureRecognizer = [[UITapGestureRecognizer alloc]

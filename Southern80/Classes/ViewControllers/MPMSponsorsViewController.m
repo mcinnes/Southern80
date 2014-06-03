@@ -44,7 +44,7 @@
     // Change button color
     UIBarButtonItem *sidebarButton = [UIBarButtonItem alloc];
     self.navigationItem.leftBarButtonItem = sidebarButton;
-    sidebarButton.title = @"Menu";
+    sidebarButton.title = @"M";
     sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
     
     // Set the side bar button action. When it's tapped, it'll show up the sidebar.

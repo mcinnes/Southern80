@@ -56,6 +56,23 @@
 		C92CA44A1933895300C90E00 /* KICamera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C92CA4471933895300C90E00 /* KICamera@2x.png */; };
 		C92CA44D1933898200C90E00 /* MPMSponsorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CA44C1933898200C90E00 /* MPMSponsorsViewController.m */; };
 		C92CA44F19338A6800C90E00 /* Sponsors.plist in Resources */ = {isa = PBXBuildFile; fileRef = C92CA44E19338A6800C90E00 /* Sponsors.plist */; };
+		C9EF541D19347CC200DC341A /* WatchingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9EF541C19347CC200DC341A /* WatchingTableCell.xib */; };
+		C9EF542019347CE800DC341A /* WatchingTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EF541F19347CE800DC341A /* WatchingTableCell.m */; };
+		C9EF542319347E9000DC341A /* MPMWatchingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EF542219347E9000DC341A /* MPMWatchingTableViewController.m */; };
+		C9EF5425193AE94700DC341A /* Brandon_bld.otf in Resources */ = {isa = PBXBuildFile; fileRef = C9EF5424193AE94700DC341A /* Brandon_bld.otf */; };
+		C9EF5429193AE99400DC341A /* BrandonGrotesque-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C9EF5428193AE99400DC341A /* BrandonGrotesque-Regular.otf */; };
+		C9EF542B193AE9F000DC341A /* BoatTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9EF542A193AE9F000DC341A /* BoatTableCell.xib */; };
+		C9EF542E193AF24900DC341A /* MPMBoatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EF542D193AF24900DC341A /* MPMBoatCell.m */; };
+		C9EF5431193AF2D400DC341A /* MPMBoatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EF5430193AF2D400DC341A /* MPMBoatListViewController.m */; };
+		C9EF5433193AF47A00DC341A /* nipple 2001.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C9EF5432193AF47A00DC341A /* nipple 2001.JPG */; };
+		C9EF5434193AF5CE00DC341A /* PillGothic300mg-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9EF5426193AE98D00DC341A /* PillGothic300mg-Light.ttf */; };
+		C9EF5435193AF5CE00DC341A /* PillGothic300mg-Semibd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9EF5427193AE98D00DC341A /* PillGothic300mg-Semibd.ttf */; };
+		C9EF5437193AF70B00DC341A /* arrow-right3.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EF5436193AF70B00DC341A /* arrow-right3.png */; };
+		C9EF543A193AF8A900DC341A /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EF5438193AF8A900DC341A /* arrow.png */; };
+		C9EF543B193AF8A900DC341A /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EF5439193AF8A900DC341A /* arrow@2x.png */; };
+		C9EF543D193AFABE00DC341A /* Psycho-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF543C193AFABE00DC341A /* Psycho-1.jpg */; };
+		C9EF543F193AFAC900DC341A /* stinga-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF543E193AFAC900DC341A /* stinga-1.jpg */; };
+		C9EF5441193B043200DC341A /* bakery-echuca.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF5440193B043200DC341A /* bakery-echuca.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,8 +148,8 @@
 		C92CA43119337B0700C90E00 /* JPSThumbnailAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSThumbnailAnnotationView.h; sourceTree = "<group>"; };
 		C92CA43219337B0700C90E00 /* JPSThumbnailAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSThumbnailAnnotationView.m; sourceTree = "<group>"; };
 		C92CA43319337B0700C90E00 /* JPSThumnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSThumnail.m; sourceTree = "<group>"; };
-		C92CA4371933800300C90E00 /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
-		C92CA4381933800300C90E00 /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
+		C92CA4371933800300C90E00 /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleTableCell.h; path = ../ViewControllers/SimpleTableCell.h; sourceTree = "<group>"; };
+		C92CA4381933800300C90E00 /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleTableCell.m; path = ../ViewControllers/SimpleTableCell.m; sourceTree = "<group>"; };
 		C92CA43A1933800900C90E00 /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
 		C92CA43D1933821500C90E00 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		C92CA43E1933821500C90E00 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
@@ -144,6 +161,27 @@
 		C92CA44B1933898200C90E00 /* MPMSponsorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMSponsorsViewController.h; sourceTree = "<group>"; };
 		C92CA44C1933898200C90E00 /* MPMSponsorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMSponsorsViewController.m; sourceTree = "<group>"; };
 		C92CA44E19338A6800C90E00 /* Sponsors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sponsors.plist; sourceTree = "<group>"; };
+		C9EF541C19347CC200DC341A /* WatchingTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WatchingTableCell.xib; sourceTree = "<group>"; };
+		C9EF541E19347CE800DC341A /* WatchingTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchingTableCell.h; sourceTree = "<group>"; };
+		C9EF541F19347CE800DC341A /* WatchingTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchingTableCell.m; sourceTree = "<group>"; };
+		C9EF542119347E9000DC341A /* MPMWatchingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPMWatchingTableViewController.h; path = Southern80/Classes/ViewControllers/MPMWatchingTableViewController.h; sourceTree = SOURCE_ROOT; };
+		C9EF542219347E9000DC341A /* MPMWatchingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPMWatchingTableViewController.m; path = Southern80/Classes/ViewControllers/MPMWatchingTableViewController.m; sourceTree = SOURCE_ROOT; };
+		C9EF5424193AE94700DC341A /* Brandon_bld.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld.otf; sourceTree = "<group>"; };
+		C9EF5426193AE98D00DC341A /* PillGothic300mg-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PillGothic300mg-Light.ttf"; sourceTree = "<group>"; };
+		C9EF5427193AE98D00DC341A /* PillGothic300mg-Semibd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PillGothic300mg-Semibd.ttf"; sourceTree = "<group>"; };
+		C9EF5428193AE99400DC341A /* BrandonGrotesque-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrandonGrotesque-Regular.otf"; sourceTree = "<group>"; };
+		C9EF542A193AE9F000DC341A /* BoatTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoatTableCell.xib; sourceTree = "<group>"; };
+		C9EF542C193AF24900DC341A /* MPMBoatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMBoatCell.h; sourceTree = "<group>"; };
+		C9EF542D193AF24900DC341A /* MPMBoatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMBoatCell.m; sourceTree = "<group>"; };
+		C9EF542F193AF2D400DC341A /* MPMBoatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPMBoatListViewController.h; path = ../Views/MPMBoatListViewController.h; sourceTree = "<group>"; };
+		C9EF5430193AF2D400DC341A /* MPMBoatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPMBoatListViewController.m; path = ../Views/MPMBoatListViewController.m; sourceTree = "<group>"; };
+		C9EF5432193AF47A00DC341A /* nipple 2001.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "nipple 2001.JPG"; sourceTree = "<group>"; };
+		C9EF5436193AF70B00DC341A /* arrow-right3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-right3.png"; sourceTree = "<group>"; };
+		C9EF5438193AF8A900DC341A /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		C9EF5439193AF8A900DC341A /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		C9EF543C193AFABE00DC341A /* Psycho-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Psycho-1.jpg"; sourceTree = "<group>"; };
+		C9EF543E193AFAC900DC341A /* stinga-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "stinga-1.jpg"; sourceTree = "<group>"; };
+		C9EF5440193B043200DC341A /* bakery-echuca.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bakery-echuca.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +246,10 @@
 		C92CA394193362BE00C90E00 /* Southern80 */ = {
 			isa = PBXGroup;
 			children = (
+				C9EF5426193AE98D00DC341A /* PillGothic300mg-Light.ttf */,
+				C9EF5428193AE99400DC341A /* BrandonGrotesque-Regular.otf */,
+				C9EF5427193AE98D00DC341A /* PillGothic300mg-Semibd.ttf */,
+				C9EF5424193AE94700DC341A /* Brandon_bld.otf */,
 				C92CA3E3193364AA00C90E00 /* Libraries */,
 				C92CA3E2193364A300C90E00 /* Images */,
 				C92CA3DE193364A000C90E00 /* Classes */,
@@ -277,10 +319,12 @@
 		C92CA3E0193364A000C90E00 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C9EF542119347E9000DC341A /* MPMWatchingTableViewController.h */,
+				C9EF542219347E9000DC341A /* MPMWatchingTableViewController.m */,
+				C9EF542F193AF2D400DC341A /* MPMBoatListViewController.h */,
+				C9EF5430193AF2D400DC341A /* MPMBoatListViewController.m */,
 				C92CA44B1933898200C90E00 /* MPMSponsorsViewController.h */,
 				C92CA44C1933898200C90E00 /* MPMSponsorsViewController.m */,
-				C92CA4371933800300C90E00 /* SimpleTableCell.h */,
-				C92CA4381933800300C90E00 /* SimpleTableCell.m */,
 				C92CA42A193376BA00C90E00 /* MPMLocationsViewController.h */,
 				C92CA42B193376BA00C90E00 /* MPMLocationsViewController.m */,
 				C92CA4271933760100C90E00 /* MPMTrackerViewController.h */,
@@ -296,7 +340,15 @@
 		C92CA3E1193364A000C90E00 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C92CA4371933800300C90E00 /* SimpleTableCell.h */,
+				C92CA4381933800300C90E00 /* SimpleTableCell.m */,
 				C92CA43A1933800900C90E00 /* SimpleTableCell.xib */,
+				C9EF541E19347CE800DC341A /* WatchingTableCell.h */,
+				C9EF541F19347CE800DC341A /* WatchingTableCell.m */,
+				C9EF541C19347CC200DC341A /* WatchingTableCell.xib */,
+				C9EF542C193AF24900DC341A /* MPMBoatCell.h */,
+				C9EF542D193AF24900DC341A /* MPMBoatCell.m */,
+				C9EF542A193AE9F000DC341A /* BoatTableCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -304,6 +356,13 @@
 		C92CA3E2193364A300C90E00 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C9EF5440193B043200DC341A /* bakery-echuca.jpg */,
+				C9EF543E193AFAC900DC341A /* stinga-1.jpg */,
+				C9EF543C193AFABE00DC341A /* Psycho-1.jpg */,
+				C9EF5438193AF8A900DC341A /* arrow.png */,
+				C9EF5439193AF8A900DC341A /* arrow@2x.png */,
+				C9EF5436193AF70B00DC341A /* arrow-right3.png */,
+				C9EF5432193AF47A00DC341A /* nipple 2001.JPG */,
 				C92CA43C1933821500C90E00 /* nav icons */,
 				C92CA4181933744600C90E00 /* weather icons */,
 			);
@@ -492,16 +551,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EF5434193AF5CE00DC341A /* PillGothic300mg-Light.ttf in Resources */,
+				C9EF5435193AF5CE00DC341A /* PillGothic300mg-Semibd.ttf in Resources */,
 				C92CA44A1933895300C90E00 /* KICamera@2x.png in Resources */,
+				C9EF5441193B043200DC341A /* bakery-echuca.jpg in Resources */,
+				C9EF543A193AF8A900DC341A /* arrow.png in Resources */,
 				C92CA4251933744600C90E00 /* 11d.png in Resources */,
+				C9EF5437193AF70B00DC341A /* arrow-right3.png in Resources */,
 				C92CA4221933744600C90E00 /* 04d.png in Resources */,
 				C92CA4211933744600C90E00 /* 02d.png in Resources */,
+				C9EF5433193AF47A00DC341A /* nipple 2001.JPG in Resources */,
 				C92CA4401933821500C90E00 /* facebook.png in Resources */,
+				C9EF543D193AFABE00DC341A /* Psycho-1.jpg in Resources */,
+				C9EF543F193AFAC900DC341A /* stinga-1.jpg in Resources */,
 				C92CA4421933821500C90E00 /* twitter.png in Resources */,
 				C92CA4261933744600C90E00 /* 13d.png in Resources */,
+				C9EF543B193AF8A900DC341A /* arrow@2x.png in Resources */,
 				C92CA4201933744600C90E00 /* 01d.png in Resources */,
+				C9EF542B193AE9F000DC341A /* BoatTableCell.xib in Resources */,
+				C9EF541D19347CC200DC341A /* WatchingTableCell.xib in Resources */,
 				C92CA4411933821500C90E00 /* instagram.png in Resources */,
+				C9EF5429193AE99400DC341A /* BrandonGrotesque-Regular.otf in Resources */,
 				C92CA4491933895300C90E00 /* KICamera.png in Resources */,
+				C9EF5425193AE94700DC341A /* Brandon_bld.otf in Resources */,
 				C92CA4231933744600C90E00 /* 09d.png in Resources */,
 				C92CA43B1933800900C90E00 /* SimpleTableCell.xib in Resources */,
 				C92CA4241933744600C90E00 /* 10d.png in Resources */,
@@ -529,6 +601,7 @@
 				C92CA4111933739300C90E00 /* AFURLConnectionOperation.m in Sources */,
 				C92CA4131933739300C90E00 /* UIImageView+AFNetworking.m in Sources */,
 				C92CA3F01933670800C90E00 /* MPMAppDelegate.m in Sources */,
+				C9EF542019347CE800DC341A /* WatchingTableCell.m in Sources */,
 				C92CA3EA1933661800C90E00 /* SidebarViewController.m in Sources */,
 				C92CA4101933739300C90E00 /* AFPropertyListRequestOperation.m in Sources */,
 				C92CA39B193362BE00C90E00 /* main.m in Sources */,
@@ -541,11 +614,14 @@
 				C92CA4291933760100C90E00 /* MPMTrackerViewController.m in Sources */,
 				C92CA44D1933898200C90E00 /* MPMSponsorsViewController.m in Sources */,
 				C92CA3ED1933666500C90E00 /* MPMViewController.m in Sources */,
+				C9EF5431193AF2D400DC341A /* MPMBoatListViewController.m in Sources */,
 				C92CA4391933800300C90E00 /* SimpleTableCell.m in Sources */,
 				C92CA43419337B0700C90E00 /* JPSThumbnailAnnotation.m in Sources */,
 				C92CA4481933895300C90E00 /* AFImagePager.m in Sources */,
 				C92CA43519337B0700C90E00 /* JPSThumbnailAnnotationView.m in Sources */,
+				C9EF542319347E9000DC341A /* MPMWatchingTableViewController.m in Sources */,
 				C92CA40D1933739300C90E00 /* AFImageRequestOperation.m in Sources */,
+				C9EF542E193AF24900DC341A /* MPMBoatCell.m in Sources */,
 				C92CA40B1933739300C90E00 /* AFHTTPClient.m in Sources */,
 				C92CA40E1933739300C90E00 /* AFJSONRequestOperation.m in Sources */,
 				C92CA3F6193372EB00C90E00 /* OWMWeatherAPI.m in Sources */,
