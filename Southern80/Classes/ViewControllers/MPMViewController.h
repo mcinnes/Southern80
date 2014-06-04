@@ -18,6 +18,7 @@
 	
 	NSMutableArray * stories;
 	
+    __weak IBOutlet UIView *weatherView;
 	
 	// a temporary item; added to the "stories" array one at a time, and cleared for the next one
 	NSMutableDictionary * item;

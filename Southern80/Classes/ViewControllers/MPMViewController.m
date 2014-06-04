@@ -26,15 +26,24 @@
 
 - (void)viewDidLoad
 {
-    for (NSString* family in [UIFont familyNames])
-    {
-        NSLog(@"%@", family);
-        
-        for (NSString* name in [UIFont fontNamesForFamilyName: family])
-        {
-            NSLog(@"  %@", name);
-        }
-    }
+    
+
+    
+    //// Image Declarations
+UIImage* bj = [UIImage imageNamed: @"bj"];
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:bj]];
+    //UIImage *basearea = [UIImage imageNamed:@"Basearea.png"];
+   
+  //  weatherView.backgroundColor = [UIColor colorWithPatternImage:basearea];
+    
+    UIGraphicsBeginImageContext(weatherView.frame.size);
+    [[UIImage imageNamed:@"Basearea.png"] drawInRect:weatherView.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    weatherView.backgroundColor = [UIColor colorWithPatternImage:image];
+    
+    
     // Change button color
     _sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
     
@@ -83,6 +92,7 @@
             return;
         }
         
+        NSLog(@"%@", result);
         self.cityName.text = [NSString stringWithFormat:@"%@, %@",
                               result[@"name"],
                               result[@"sys"][@"country"]
@@ -90,6 +100,7 @@
         imagenamejson = result[@"weather"][0][@"icon"];
         imagenamejson = [imagenamejson stringByAppendingString:@".png"];
         
+        self.currentTemp.textColor = [UIColor whiteColor];
         self.currentTemp.text = [NSString stringWithFormat:@"%.1f℃",
                                  [result[@"main"][@"temp"] floatValue] ];
         
@@ -104,6 +115,7 @@
         
         
         
+        [self.activityIndicator hidesWhenStopped];
         [self.activityIndicator stopAnimating];
         //end image load
     }];
@@ -122,7 +134,7 @@
     //
     //  }];
     
-    [self.currentTemp setFont:[UIFont fontWithName:@"Helvetica Neue" size:50]];
+    //[self.currentTemp setFont:[UIFont fontWithName:@"Helvetica Neue" size:50]];
     
     
     // UIImage *gradientImage44 = [[UIImage imageNamed:@"ipad-menu-bar.png"]
@@ -170,6 +182,7 @@
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
 	if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier];
+        cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Basearea"]];
         
 	}
 	
@@ -179,10 +192,14 @@
 	
 	return cell;
 }
+
+
+
+
 #pragma mark - parseing_Delegate_methods
 - (void)parserDidStartDocument:(NSXMLParser *)parser{
 	NSLog(@"found file and started parsing");
-	
+	// TODO: strip "southern80: " from feed
 }
 
 - (void)parseXMLFileAtURL:(NSString *)URL
@@ -207,9 +224,6 @@
     [rssParser parse];
 	
 }
-
-
-
 
 - (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError {
 	NSString * errorString = [NSString stringWithFormat:@"Unable to download story feed from web site (Error code %i )", [parseError code]];

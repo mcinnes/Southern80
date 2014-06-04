@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4882D48A-12B4-4FE0-A027-429EAEDE32A0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Southern80</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6C81B4D4-9284-4BE4-881D-B5DC561F4143</key>
+		<string>ssh://github.com/mcinnes/Southern80</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Southern80.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6C81B4D4-9284-4BE4-881D-B5DC561F4143</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/mcinnes/Southern80</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6C81B4D4-9284-4BE4-881D-B5DC561F4143</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6C81B4D4-9284-4BE4-881D-B5DC561F4143</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Southern80</string>
+		</dict>
+	</array>
+</dict>
+</plist>

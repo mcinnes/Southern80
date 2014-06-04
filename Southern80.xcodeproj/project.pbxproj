@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C908480A193DC5B800244CCC /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = C9084809193DC5B800244CCC /* image.png */; };
+		C908480C193DC74200244CCC /* Basearea.png in Resources */ = {isa = PBXBuildFile; fileRef = C908480B193DC74200244CCC /* Basearea.png */; };
+		C908480E193DC87A00244CCC /* bj.png in Resources */ = {isa = PBXBuildFile; fileRef = C908480D193DC87A00244CCC /* bj.png */; };
+		C9084811193DCBCE00244CCC /* weather.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C908480F193DCBCE00244CCC /* weather.jpg */; };
+		C9084814193DCC7700244CCC /* Separator.png in Resources */ = {isa = PBXBuildFile; fileRef = C9084812193DCC7700244CCC /* Separator.png */; };
+		C9084817193DD29200244CCC /* weather-widget-onlyoly_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9084815193DD29200244CCC /* weather-widget-onlyoly_1x.png */; };
+		C908481A193DD37D00244CCC /* abc.png in Resources */ = {isa = PBXBuildFile; fileRef = C9084818193DD37D00244CCC /* abc.png */; };
 		C92CA38F193362BE00C90E00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92CA38E193362BE00C90E00 /* Foundation.framework */; };
 		C92CA391193362BE00C90E00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92CA390193362BE00C90E00 /* CoreGraphics.framework */; };
 		C92CA393193362BE00C90E00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92CA392193362BE00C90E00 /* UIKit.framework */; };
@@ -86,6 +93,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9084809193DC5B800244CCC /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		C908480B193DC74200244CCC /* Basearea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Basearea.png; sourceTree = "<group>"; };
+		C908480D193DC87A00244CCC /* bj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bj.png; sourceTree = "<group>"; };
+		C9084810193DCBCE00244CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Base; path = weather.jpg; sourceTree = "<group>"; };
+		C9084813193DCC7700244CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Separator.png; sourceTree = "<group>"; };
+		C9084816193DD29200244CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "weather-widget-onlyoly_1x.png"; sourceTree = "<group>"; };
+		C9084819193DD37D00244CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = abc.png; sourceTree = "<group>"; };
 		C92CA38B193362BE00C90E00 /* Southern80.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Southern80.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92CA38E193362BE00C90E00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C92CA390193362BE00C90E00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -294,6 +308,10 @@
 			isa = PBXGroup;
 			children = (
 				C92CA3C41933646F00C90E00 /* Main.storyboard */,
+				C9084818193DD37D00244CCC /* abc.png */,
+				C9084815193DD29200244CCC /* weather-widget-onlyoly_1x.png */,
+				C9084812193DCC7700244CCC /* Separator.png */,
+				C908480F193DCBCE00244CCC /* weather.jpg */,
 			);
 			name = Base.lproj;
 			path = Southern80/Base.lproj;
@@ -331,6 +349,9 @@
 				C92CA4281933760100C90E00 /* MPMTrackerViewController.m */,
 				C92CA3EB1933666500C90E00 /* MPMViewController.h */,
 				C92CA3EC1933666500C90E00 /* MPMViewController.m */,
+				C908480D193DC87A00244CCC /* bj.png */,
+				C908480B193DC74200244CCC /* Basearea.png */,
+				C9084809193DC5B800244CCC /* image.png */,
 				C92CA3E81933661800C90E00 /* SidebarViewController.h */,
 				C92CA3E91933661800C90E00 /* SidebarViewController.m */,
 			);
@@ -484,6 +505,7 @@
 				C92CA387193362BE00C90E00 /* Sources */,
 				C92CA388193362BE00C90E00 /* Frameworks */,
 				C92CA389193362BE00C90E00 /* Resources */,
+				C9084808193DC04400244CCC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -556,15 +578,19 @@
 				C92CA44A1933895300C90E00 /* KICamera@2x.png in Resources */,
 				C9EF5441193B043200DC341A /* bakery-echuca.jpg in Resources */,
 				C9EF543A193AF8A900DC341A /* arrow.png in Resources */,
+				C908480E193DC87A00244CCC /* bj.png in Resources */,
 				C92CA4251933744600C90E00 /* 11d.png in Resources */,
 				C9EF5437193AF70B00DC341A /* arrow-right3.png in Resources */,
 				C92CA4221933744600C90E00 /* 04d.png in Resources */,
 				C92CA4211933744600C90E00 /* 02d.png in Resources */,
+				C9084811193DCBCE00244CCC /* weather.jpg in Resources */,
 				C9EF5433193AF47A00DC341A /* nipple 2001.JPG in Resources */,
+				C908481A193DD37D00244CCC /* abc.png in Resources */,
 				C92CA4401933821500C90E00 /* facebook.png in Resources */,
 				C9EF543D193AFABE00DC341A /* Psycho-1.jpg in Resources */,
 				C9EF543F193AFAC900DC341A /* stinga-1.jpg in Resources */,
 				C92CA4421933821500C90E00 /* twitter.png in Resources */,
+				C908480C193DC74200244CCC /* Basearea.png in Resources */,
 				C92CA4261933744600C90E00 /* 13d.png in Resources */,
 				C9EF543B193AF8A900DC341A /* arrow@2x.png in Resources */,
 				C92CA4201933744600C90E00 /* 01d.png in Resources */,
@@ -575,11 +601,14 @@
 				C92CA4491933895300C90E00 /* KICamera.png in Resources */,
 				C9EF5425193AE94700DC341A /* Brandon_bld.otf in Resources */,
 				C92CA4231933744600C90E00 /* 09d.png in Resources */,
+				C9084814193DCC7700244CCC /* Separator.png in Resources */,
 				C92CA43B1933800900C90E00 /* SimpleTableCell.xib in Resources */,
 				C92CA4241933744600C90E00 /* 10d.png in Resources */,
 				C92CA3F21933671200C90E00 /* InfoPlist.strings in Resources */,
 				C92CA3D71933647000C90E00 /* Main.storyboard in Resources */,
+				C9084817193DD29200244CCC /* weather-widget-onlyoly_1x.png in Resources */,
 				C92CA44F19338A6800C90E00 /* Sponsors.plist in Resources */,
+				C908480A193DC5B800244CCC /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +621,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9084808193DC04400244CCC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|DevTeam:|XXX:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C92CA387193362BE00C90E00 /* Sources */ = {
@@ -647,6 +692,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C908480F193DCBCE00244CCC /* weather.jpg */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9084810193DCBCE00244CCC /* Base */,
+			);
+			name = weather.jpg;
+			sourceTree = "<group>";
+		};
+		C9084812193DCC7700244CCC /* Separator.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9084813193DCC7700244CCC /* Base */,
+			);
+			name = Separator.png;
+			sourceTree = "<group>";
+		};
+		C9084815193DD29200244CCC /* weather-widget-onlyoly_1x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9084816193DD29200244CCC /* Base */,
+			);
+			name = "weather-widget-onlyoly_1x.png";
+			sourceTree = "<group>";
+		};
+		C9084818193DD37D00244CCC /* abc.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9084819193DD37D00244CCC /* Base */,
+			);
+			name = abc.png;
+			sourceTree = "<group>";
+		};
 		C92CA3B6193362BE00C90E00 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -748,6 +825,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Southern80/Southern80-Prefix.pch";
 				INFOPLIST_FILE = "Southern80/Southern80-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -761,6 +839,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Southern80/Southern80-Prefix.pch";
 				INFOPLIST_FILE = "Southern80/Southern80-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
