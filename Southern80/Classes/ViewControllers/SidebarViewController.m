@@ -35,7 +35,7 @@
 {
     [super viewDidLoad];
 
-    segueNames = @[@"home", @"times", @"results", @"tracker", @"locations", @"wishlist", @"bookmark", @"tag", @"tag", @"tag", @"instagram", @"twitter", @"facebook"];
+    segueNames = @[@"home", @"times", @"results", @"tracker", @"locations", @"featured", @"bookmark", @"tag", @"tag", @"tag", @"instagram", @"twitter", @"facebook"];
     
     dataArray = [[NSMutableArray alloc] init];
     
@@ -45,7 +45,7 @@
     [dataArray addObject:firstItemsArrayDict];
     
     //Second section data
-    NSArray *secondItemsArray = [[NSArray alloc] initWithObjects:@"Times", @"Results", @"Tracker", @"Locations", @"Sponsors", nil];
+    NSArray *secondItemsArray = [[NSArray alloc] initWithObjects:@"Times", @"Results", @"Tracker", @"Locations", @"Sponsors", @"Featured Boats", nil];
     NSDictionary *secondItemsArrayDict = [NSDictionary dictionaryWithObject:secondItemsArray forKey:@"data"];
     [dataArray addObject:secondItemsArrayDict];
     NSArray *thirdItemsArray = [[NSArray alloc] initWithObjects:@"Item 4", @"Item 5", @"Item 6", @"Last Item", nil];
@@ -224,7 +224,7 @@
     // Set the title of navigation bar by using the menu items
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
-    destViewController.title = [[segueNames objectAtIndex:indexPath.row] capitalizedString];
+   // destViewController.title = [[segueNames objectAtIndex:indexPath.row] capitalizedString];
     
     
     if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {

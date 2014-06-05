@@ -29,20 +29,10 @@
     
 
     
-    //// Image Declarations
-UIImage* bj = [UIImage imageNamed: @"bj"];
+//// Image Declarations
+    UIImage* bj = [UIImage imageNamed: @"bj"];
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:bj]];
-    //UIImage *basearea = [UIImage imageNamed:@"Basearea.png"];
-   
-  //  weatherView.backgroundColor = [UIColor colorWithPatternImage:basearea];
-    
-    UIGraphicsBeginImageContext(weatherView.frame.size);
-    [[UIImage imageNamed:@"Basearea.png"] drawInRect:weatherView.bounds];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    weatherView.backgroundColor = [UIColor colorWithPatternImage:image];
-    
+    [self getWeatherData];
     
     // Change button color
     _sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
@@ -54,7 +44,7 @@ UIImage* bj = [UIImage imageNamed: @"bj"];
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 
-    
+    //Twitter
     if ([stories count] == 0) {
 		NSString * path = @"http://twss.55uk.net/southern80/10";
         
@@ -62,6 +52,39 @@ UIImage* bj = [UIImage imageNamed: @"bj"];
 	}
 	
 	cellSize = CGSizeMake([newsTable bounds].size.width, 60);
+    
+    //Weather
+  
+        
+        [self.activityIndicator hidesWhenStopped];
+        [self.activityIndicator stopAnimating];
+        //end image load
+    
+    //  [_weatherAPI forecastWeatherByCityName:@"Echuca" withCallback:^(NSError *error, NSDictionary *result) {
+    //      downloadCount++;
+    //      if (downloadCount > 1) [self.activityIndicator stopAnimating];
+    
+    //     if (error) {
+    //         // Handle the error;
+    //   return;
+    //     }
+    //
+    //      _forecast = result[@"list"];
+    //     [self.forecastTableView reloadData];
+    //
+    //  }];
+    
+    //[self.currentTemp setFont:[UIFont fontWithName:@"Helvetica Neue" size:50]];
+    
+    
+    // UIImage *gradientImage44 = [[UIImage imageNamed:@"ipad-menu-bar.png"]
+    //                            resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    // [[UINavigationBar appearance] setBackgroundImage:gradientImage44
+    //                                    forBarMetrics:UIBarMetricsDefault];
+    
+    
+}
+-(void)getWeatherData {
     downloadCount = 0;
     
     NSString *dateComponents = @"H:m dd MMM";
@@ -92,7 +115,7 @@ UIImage* bj = [UIImage imageNamed: @"bj"];
             return;
         }
         
-        NSLog(@"%@", result);
+        NSLog(@"this is the result %@", result);
         self.cityName.text = [NSString stringWithFormat:@"%@, %@",
                               result[@"name"],
                               result[@"sys"][@"country"]
@@ -110,41 +133,12 @@ UIImage* bj = [UIImage imageNamed: @"bj"];
         NSLog(@"%@", result[@"weather"][0][@"description"]);
         
         NSLog(@"%@", imagenamejson);
-        self.weatherImage.image = [UIImage imageNamed:imagenamejson];
+        self.weatherImage.image = [UIImage imageNamed:@"11d.png"];
         
         
-        
-        
-        [self.activityIndicator hidesWhenStopped];
-        [self.activityIndicator stopAnimating];
-        //end image load
     }];
     
-    //  [_weatherAPI forecastWeatherByCityName:@"Echuca" withCallback:^(NSError *error, NSDictionary *result) {
-    //      downloadCount++;
-    //      if (downloadCount > 1) [self.activityIndicator stopAnimating];
-    
-    //     if (error) {
-    //         // Handle the error;
-    //   return;
-    //     }
-    //
-    //      _forecast = result[@"list"];
-    //     [self.forecastTableView reloadData];
-    //
-    //  }];
-    
-    //[self.currentTemp setFont:[UIFont fontWithName:@"Helvetica Neue" size:50]];
-    
-    
-    // UIImage *gradientImage44 = [[UIImage imageNamed:@"ipad-menu-bar.png"]
-    //                            resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-    // [[UINavigationBar appearance] setBackgroundImage:gradientImage44
-    //                                    forBarMetrics:UIBarMetricsDefault];
-    
-    
 }
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -182,18 +176,27 @@ UIImage* bj = [UIImage imageNamed: @"bj"];
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
 	if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier];
-        cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Basearea"]];
-        
+       // cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Basearea"]];
+        cell.textLabel.font = [UIFont fontWithName:@"Helvetica Nueue" size:16];
+        cell.backgroundColor = [UIColor clearColor];
+
+        cell.backgroundView = [UIView new];
+        cell.selectedBackgroundView = [UIView new];
 	}
 	
 	// Set up the cell
 	int storyIndex = [indexPath indexAtPosition: [indexPath length] - 1];
-    cell.textLabel.text=[[stories objectAtIndex: storyIndex] objectForKey: @"title"];
+    NSString* stringWithoutHttp = [[[stories objectAtIndex: storyIndex] objectForKey: @"title"] stringByReplacingOccurrencesOfString:@"southern80: " withString:@""];
+    NSLog(@"%@", stringWithoutHttp);
+    cell.textLabel.text=stringWithoutHttp;
 	
 	return cell;
 }
 
-
+- (void)tableView:(UITableView *)tableView  willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [cell setBackgroundColor:[UIColor clearColor]];
+}
 
 
 #pragma mark - parseing_Delegate_methods
@@ -257,7 +260,7 @@ UIImage* bj = [UIImage imageNamed: @"bj"];
 		[item setObject:currentDate forKey:@"date"];
 		
 		[stories addObject:[item copy]];
-		NSLog(@"adding story: %@", currentTitle);
+		NSLog(@"holy fuck balls adding story: %@", currentTitle);
 	}
 	
 }
@@ -274,13 +277,13 @@ UIImage* bj = [UIImage imageNamed: @"bj"];
 	} else if ([currentElement isEqualToString:@"pubDate"]) {
 		[currentDate appendString:string];
 	}
-	
+	NSLog(@"UMM %@", string);
 }
 
 - (void)parserDidEndDocument:(NSXMLParser *)parser {
 	
-    //	[activityIndicator stopAnimating];
-    //	[activityIndicator removeFromSuperview];
+    [self.activityIndicator stopAnimating];
+    	[self.activityIndicator removeFromSuperview];
 	
 	NSLog(@"all done!");
 	NSLog(@"stories array has %d items", [stories count]);

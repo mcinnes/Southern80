@@ -8,6 +8,7 @@
 
 #import "MPMLocationsViewController.h"
 #import "JPSThumbnailAnnotation.h"
+#import "SWRevealViewController.h"
 //#import "MPMSponsorsViewController.h"
 
 @interface MPMLocationsViewController ()
@@ -19,20 +20,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // TODO: popoverviewcontroller for toggling items on or off
     // Map View
     MKMapView *mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     mapView.delegate = self;
     [self.view addSubview:mapView];
+  //  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
-    // Annotations
-    [mapView addAnnotations:[self generateAnnotations]];
-}
+   // if (![defaults objectForKey:@"Username"]) {
+        [mapView addAnnotations:[self generateAnnotations]];
 
-- (NSArray *)generateAnnotations {
-    NSMutableArray *annotations = [[NSMutableArray alloc] initWithCapacity:6];
+    //} else {
+        [mapView addAnnotations:[self generateRaceLocations]];
+  //  }
+    // Annotations
+    //[mapView addAnnotations:[self generateAnnotations]];
     
+
+    
+    // Change button color
+    _sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
+    
+    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    _sidebarButton.target = self.revealViewController;
+    _sidebarButton.action = @selector(revealToggle:);
+}
+-(NSArray *)generateRaceLocations {
+    NSMutableArray *raceAnnotations = [[NSMutableArray alloc] initWithCapacity:3];
     // Empire State Building
     JPSThumbnail *empire = [[JPSThumbnail alloc] init];
     empire.image = [UIImage imageNamed:@"MWSC.png"];
@@ -40,9 +55,9 @@
     empire.subtitle = @"Home of the Southern 80";
     empire.coordinate = CLLocationCoordinate2DMake(-36.134945, 144.753021);
     empire.disclosureBlock = ^{ locationInt = 0; [self performSegueWithIdentifier:@"sponsor" sender:self];
-};
+    };
     
-    [annotations addObject:[[JPSThumbnailAnnotation alloc] initWithThumbnail:empire]];
+    [raceAnnotations addObject:[[JPSThumbnailAnnotation alloc] initWithThumbnail:empire]];
     
     // Apple HQ
     JPSThumbnail *apple = [[JPSThumbnail alloc] init];
@@ -52,7 +67,12 @@
     apple.coordinate = CLLocationCoordinate2DMake(-35.9954605102539, 144.521850585938);
     apple.disclosureBlock = ^{  };
     
-    [annotations addObject:[[JPSThumbnailAnnotation alloc] initWithThumbnail:apple]];
+    [raceAnnotations addObject:[[JPSThumbnailAnnotation alloc] initWithThumbnail:apple]];
+    return raceAnnotations;
+}
+- (NSArray *)generateAnnotations {
+    NSMutableArray *annotations = [[NSMutableArray alloc] initWithCapacity:6];
+    
     
     // Parliament of Canada
     JPSThumbnail *ottawa = [[JPSThumbnail alloc] init];
@@ -125,4 +145,14 @@
     
     
 }
+- (IBAction)showPopover:(id)sender {
+    {
+        if (_filterPopoverController == nil){
+            [self performSegueWithIdentifier:@"segueToFilterPopoverView" sender:self];
+        }else
+            [_filterPopoverController dismissPopoverAnimated:YES];
+        _filterPopoverController = nil;
+    }
+}
+
 @end

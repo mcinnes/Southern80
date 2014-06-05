@@ -63,6 +63,9 @@
 		C92CA44A1933895300C90E00 /* KICamera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C92CA4471933895300C90E00 /* KICamera@2x.png */; };
 		C92CA44D1933898200C90E00 /* MPMSponsorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CA44C1933898200C90E00 /* MPMSponsorsViewController.m */; };
 		C92CA44F19338A6800C90E00 /* Sponsors.plist in Resources */ = {isa = PBXBuildFile; fileRef = C92CA44E19338A6800C90E00 /* Sponsors.plist */; };
+		C9350445193F1684002EDEB7 /* s80LogoTrans.png in Resources */ = {isa = PBXBuildFile; fileRef = C9350444193F1684002EDEB7 /* s80LogoTrans.png */; };
+		C9350448193F654B002EDEB7 /* MPMBoatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9350447193F654B002EDEB7 /* MPMBoatDetailViewController.m */; };
+		C9D6749B19405EC300A1CFDF /* MPMBoatData.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D6749A19405EC300A1CFDF /* MPMBoatData.m */; };
 		C9EF541D19347CC200DC341A /* WatchingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9EF541C19347CC200DC341A /* WatchingTableCell.xib */; };
 		C9EF542019347CE800DC341A /* WatchingTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EF541F19347CE800DC341A /* WatchingTableCell.m */; };
 		C9EF542319347E9000DC341A /* MPMWatchingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EF542219347E9000DC341A /* MPMWatchingTableViewController.m */; };
@@ -175,6 +178,11 @@
 		C92CA44B1933898200C90E00 /* MPMSponsorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMSponsorsViewController.h; sourceTree = "<group>"; };
 		C92CA44C1933898200C90E00 /* MPMSponsorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMSponsorsViewController.m; sourceTree = "<group>"; };
 		C92CA44E19338A6800C90E00 /* Sponsors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sponsors.plist; sourceTree = "<group>"; };
+		C9350444193F1684002EDEB7 /* s80LogoTrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s80LogoTrans.png; sourceTree = "<group>"; };
+		C9350446193F654B002EDEB7 /* MPMBoatDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPMBoatDetailViewController.h; path = Southern80/Classes/ViewControllers/MPMBoatDetailViewController.h; sourceTree = SOURCE_ROOT; };
+		C9350447193F654B002EDEB7 /* MPMBoatDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPMBoatDetailViewController.m; path = Southern80/Classes/ViewControllers/MPMBoatDetailViewController.m; sourceTree = SOURCE_ROOT; };
+		C9D6749919405EC300A1CFDF /* MPMBoatData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPMBoatData.h; path = Southern80/Classes/data/MPMBoatData.h; sourceTree = SOURCE_ROOT; };
+		C9D6749A19405EC300A1CFDF /* MPMBoatData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPMBoatData.m; path = Southern80/Classes/data/MPMBoatData.m; sourceTree = SOURCE_ROOT; };
 		C9EF541C19347CC200DC341A /* WatchingTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WatchingTableCell.xib; sourceTree = "<group>"; };
 		C9EF541E19347CE800DC341A /* WatchingTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchingTableCell.h; sourceTree = "<group>"; };
 		C9EF541F19347CE800DC341A /* WatchingTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchingTableCell.m; sourceTree = "<group>"; };
@@ -320,6 +328,7 @@
 		C92CA3DE193364A000C90E00 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C9D6749C19405ECC00A1CFDF /* data */,
 				C92CA3DF193364A000C90E00 /* Singletons */,
 				C92CA3E0193364A000C90E00 /* ViewControllers */,
 				C92CA3E1193364A000C90E00 /* Views */,
@@ -337,6 +346,8 @@
 		C92CA3E0193364A000C90E00 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C9350446193F654B002EDEB7 /* MPMBoatDetailViewController.h */,
+				C9350447193F654B002EDEB7 /* MPMBoatDetailViewController.m */,
 				C9EF542119347E9000DC341A /* MPMWatchingTableViewController.h */,
 				C9EF542219347E9000DC341A /* MPMWatchingTableViewController.m */,
 				C9EF542F193AF2D400DC341A /* MPMBoatListViewController.h */,
@@ -377,6 +388,7 @@
 		C92CA3E2193364A300C90E00 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C9350444193F1684002EDEB7 /* s80LogoTrans.png */,
 				C9EF5440193B043200DC341A /* bakery-echuca.jpg */,
 				C9EF543E193AFAC900DC341A /* stinga-1.jpg */,
 				C9EF543C193AFABE00DC341A /* Psycho-1.jpg */,
@@ -495,6 +507,15 @@
 			path = AFImagePager;
 			sourceTree = "<group>";
 		};
+		C9D6749C19405ECC00A1CFDF /* data */ = {
+			isa = PBXGroup;
+			children = (
+				C9D6749919405EC300A1CFDF /* MPMBoatData.h */,
+				C9D6749A19405EC300A1CFDF /* MPMBoatData.m */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -581,6 +602,7 @@
 				C908480E193DC87A00244CCC /* bj.png in Resources */,
 				C92CA4251933744600C90E00 /* 11d.png in Resources */,
 				C9EF5437193AF70B00DC341A /* arrow-right3.png in Resources */,
+				C9350445193F1684002EDEB7 /* s80LogoTrans.png in Resources */,
 				C92CA4221933744600C90E00 /* 04d.png in Resources */,
 				C92CA4211933744600C90E00 /* 02d.png in Resources */,
 				C9084811193DCBCE00244CCC /* weather.jpg in Resources */,
@@ -643,12 +665,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D6749B19405EC300A1CFDF /* MPMBoatData.m in Sources */,
 				C92CA4111933739300C90E00 /* AFURLConnectionOperation.m in Sources */,
 				C92CA4131933739300C90E00 /* UIImageView+AFNetworking.m in Sources */,
 				C92CA3F01933670800C90E00 /* MPMAppDelegate.m in Sources */,
 				C9EF542019347CE800DC341A /* WatchingTableCell.m in Sources */,
 				C92CA3EA1933661800C90E00 /* SidebarViewController.m in Sources */,
 				C92CA4101933739300C90E00 /* AFPropertyListRequestOperation.m in Sources */,
+				C9350448193F654B002EDEB7 /* MPMBoatDetailViewController.m in Sources */,
 				C92CA39B193362BE00C90E00 /* main.m in Sources */,
 				C92CA3E71933655A00C90E00 /* SWRevealViewController.m in Sources */,
 				C92CA43619337B0700C90E00 /* JPSThumnail.m in Sources */,
