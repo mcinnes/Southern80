@@ -14,6 +14,7 @@
 		C9084814193DCC7700244CCC /* Separator.png in Resources */ = {isa = PBXBuildFile; fileRef = C9084812193DCC7700244CCC /* Separator.png */; };
 		C9084817193DD29200244CCC /* weather-widget-onlyoly_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9084815193DD29200244CCC /* weather-widget-onlyoly_1x.png */; };
 		C908481A193DD37D00244CCC /* abc.png in Resources */ = {isa = PBXBuildFile; fileRef = C9084818193DD37D00244CCC /* abc.png */; };
+		C9275A5E1F4DA44400A10FE4 /* Exhibitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C9275A5D1F4DA44400A10FE4 /* Exhibitor.m */; };
 		C92CA38F193362BE00C90E00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92CA38E193362BE00C90E00 /* Foundation.framework */; };
 		C92CA391193362BE00C90E00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92CA390193362BE00C90E00 /* CoreGraphics.framework */; };
 		C92CA393193362BE00C90E00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92CA392193362BE00C90E00 /* UIKit.framework */; };
@@ -103,6 +104,8 @@
 		C9084813193DCC7700244CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Separator.png; sourceTree = "<group>"; };
 		C9084816193DD29200244CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "weather-widget-onlyoly_1x.png"; sourceTree = "<group>"; };
 		C9084819193DD37D00244CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = abc.png; sourceTree = "<group>"; };
+		C9275A5C1F4DA44400A10FE4 /* Exhibitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exhibitor.h; path = Classes/data/Exhibitor.h; sourceTree = "<group>"; };
+		C9275A5D1F4DA44400A10FE4 /* Exhibitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Exhibitor.m; path = Classes/data/Exhibitor.m; sourceTree = "<group>"; };
 		C92CA38B193362BE00C90E00 /* Southern80.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Southern80.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92CA38E193362BE00C90E00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C92CA390193362BE00C90E00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -270,6 +273,8 @@
 			children = (
 				C9EF5426193AE98D00DC341A /* PillGothic300mg-Light.ttf */,
 				C9EF5428193AE99400DC341A /* BrandonGrotesque-Regular.otf */,
+				C9275A5C1F4DA44400A10FE4 /* Exhibitor.h */,
+				C9275A5D1F4DA44400A10FE4 /* Exhibitor.m */,
 				C9EF5427193AE98D00DC341A /* PillGothic300mg-Semibd.ttf */,
 				C9EF5424193AE94700DC341A /* Brandon_bld.otf */,
 				C92CA3E3193364AA00C90E00 /* Libraries */,
@@ -665,6 +670,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9275A5E1F4DA44400A10FE4 /* Exhibitor.m in Sources */,
 				C9D6749B19405EC300A1CFDF /* MPMBoatData.m in Sources */,
 				C92CA4111933739300C90E00 /* AFURLConnectionOperation.m in Sources */,
 				C92CA4131933739300C90E00 /* UIImageView+AFNetworking.m in Sources */,

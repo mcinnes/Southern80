@@ -8,13 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "AFImagePager.h"
+#import "Exhibitor.h"
 @interface MPMSponsorsViewController : UIViewController <AFImagePagerDelegate, AFImagePagerDataSource>
 {
     IBOutlet AFImagePager *_imagePager;
+    Exhibitor *exhibitor;
 }
 
 
 @property (nonatomic, assign) int locationInt;
+@property (nonatomic, retain) Exhibitor *exhibitor;
 
 
 @end
